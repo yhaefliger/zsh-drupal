@@ -14,6 +14,17 @@ function droot() {
   return 1
 }
 
+# aliases
+alias dcr='drush cache:rebuild'
+alias dcc='drush cache:clear'
+alias dcex='drush config:export'
+alias dcim='drush config:import'
+alias dcget='drush config:get'
+alias dcset='drush config:set'
+alias dcedit='drush config:edit'
+
+
+# autocomplete
 compdef _drush_add_completion drush
 
 function _drush_add_completion() {

@@ -4,6 +4,7 @@ Mainly inspired from [Artisan ZSH plugin](https://github.com/jessarcher/zsh-arti
 
 * new function `droot` to go from anywhere within a drupal project to the root directory.
 * `drush` function autocompletion
+* common `drush` tasks aliases (cache/config) 
 
 ## Requirement
 
@@ -21,3 +22,13 @@ git clone https://github.com/yhaefliger/zsh-drupal.git ~/.oh-my-zsh/custom/plugi
 ```
 
 add `drupal` in the plugin directive of your `.zshrc` file
+
+## Aliases
+
+* `dcr`: drush cache:rebuild
+* `dcc`: drush cache:clear
+* `dcex`: drush config:export
+* `dcim`: drush config:import
+* `dcget`: drush config:get
+* `dcset`: drush config:set
+* `dcedit`: drush config:edit
