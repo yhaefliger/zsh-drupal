@@ -1,12 +1,11 @@
 # find and cd to drupal root folder
 function droot() {
-	dir=.
-	until [ $dir -ef / ]; do
+  dir=.
+  until [ $dir -ef / ]; do
     if [ -d "$dir/web" ]; then
       cd "$dir"
       return 0
     fi
-
     dir+=/..
   done
 
