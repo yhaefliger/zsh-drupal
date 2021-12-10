@@ -2,7 +2,7 @@
 
 Mainly inspired from [Artisan ZSH plugin](https://github.com/jessarcher/zsh-artisan) by Jess Archer
 
-* new function `droot` to go from anywhere within a drupal project to the root directory.
+* 2 new functions: `droot` to go from anywhere within a drupal project to the root directory and `dtheme` to cd to the active theme directory.
 * `drush` function autocompletion
 * common `drush` tasks aliases (cache/config) 
 
@@ -25,6 +25,8 @@ add `drupal` in the plugin directive of your `.zshrc` file
 
 ## Aliases
 
+### Drush
+
 * `dcr`: drush cache:rebuild
 * `dcc`: drush cache:clear
 * `dcex`: drush config:export
@@ -32,3 +34,12 @@ add `drupal` in the plugin directive of your `.zshrc` file
 * `dcget`: drush config:get
 * `dcset`: drush config:set
 * `dcedit`: drush config:edit
+* `dup`: drush updatedb
+
+### Composer
+
+Check Drupal outdated versions and update core as recommended in the [documentation](https://www.drupal.org/docs/updating-drupal/updating-drupal-core-via-composer)
+
+* `dco`: composer outdated "drupal/*"
+* `dcu`: composer update drupal/core --with-dependencies
+* `dcur`: composer update drupal/core "drupal/core-*" --with-all-dependencies
