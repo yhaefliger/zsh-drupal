@@ -2,9 +2,9 @@
 
 Mainly inspired from [Artisan ZSH plugin](https://github.com/jessarcher/zsh-artisan) by Jess Archer
 
-* 2 new functions: `droot` to go from anywhere within a drupal project to the root directory and `dtheme` to cd to the active theme directory.
-* `drush` function autocompletion
-* common `drush` tasks aliases (cache/config) 
+* 2 new functions: `droot` to go from anywhere within a drupal project to the root directory and `dtheme` to go to the active theme directory.
+* `drush` function auto-completion.
+* common `drush` tasks aliases (cache/config).
 
 ## Requirement
 
@@ -21,7 +21,7 @@ Mainly inspired from [Artisan ZSH plugin](https://github.com/jessarcher/zsh-arti
 git clone https://github.com/yhaefliger/zsh-drupal.git ~/.oh-my-zsh/custom/plugins/drupal
 ```
 
-add `drupal` in the plugin directive of your `.zshrc` file
+Add `drupal` in the plugin directive of your `.zshrc` file
 
 ## Aliases
 
