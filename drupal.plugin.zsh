@@ -23,9 +23,22 @@ function dtheme() {
   return 0
 }
 
+# cd to current site folder
+function dsite() {
+  root=`drush ev "echo DRUPAL_ROOT"`
+  cd "$root"
+  theme_path=`drush ev "echo \Drupal::service('kernel')->getSitePath()"`
+  cd "$theme_path"
+  return 0 
+}
+
 # aliases
 alias dcr='drush cache:rebuild'
 alias dcc='drush cache:clear'
+
+alias den='drush en'
+alias dpmu='drush pmu'
+alias dre='drush dre'
 
 alias dcex='drush config:export'
 alias dcim='drush config:import'

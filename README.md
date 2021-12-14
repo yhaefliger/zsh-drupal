@@ -2,7 +2,7 @@
 
 Mainly inspired from [Artisan ZSH plugin](https://github.com/jessarcher/zsh-artisan) by Jess Archer
 
-* 2 new functions: `droot` to go from anywhere within a drupal project to the root directory and `dtheme` to go to the active theme directory.
+* 3 new functions: `droot` to go from anywhere within a drupal project to the root directory, `dtheme` to go to the active theme directory and `dsite` to go to site directory.
 * `drush` function auto-completion.
 * common `drush` tasks aliases (cache/config).
 
