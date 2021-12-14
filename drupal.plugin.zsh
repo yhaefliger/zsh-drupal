@@ -27,8 +27,8 @@ function dtheme() {
 function dsite() {
   root=`drush ev "echo DRUPAL_ROOT"`
   cd "$root"
-  theme_path=`drush ev "echo \Drupal::service('kernel')->getSitePath()"`
-  cd "$theme_path"
+  site_path=`drush ev "echo \Drupal::service('kernel')->getSitePath()"`
+  cd "$site_path"
   return 0 
 }
 
