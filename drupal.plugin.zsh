@@ -17,19 +17,29 @@ function droot() {
 # cd to the active theme path
 function dtheme() {
   root=`drush ev "echo DRUPAL_ROOT"`
-  cd "$root"
-  theme_path=`drush ev "echo \Drupal::theme()->getActiveTheme()->getPath()"`
-  cd "$theme_path"
-  return 0
+  if [ $? -eq 0 ]; then
+    cd "$root"
+    theme_path=`drush ev "echo \Drupal::theme()->getActiveTheme()->getPath()"`
+    cd "$theme_path"
+    return 0
+  else
+    echo "drush cant be used from this folder"
+    return 1
+  fi
 }
 
 # cd to current site folder
 function dsite() {
   root=`drush ev "echo DRUPAL_ROOT"`
-  cd "$root"
-  site_path=`drush ev "echo \Drupal::service('kernel')->getSitePath()"`
-  cd "$site_path"
-  return 0 
+  if [ $? -eq 0]; then
+    cd "$root"
+    site_path=`drush ev "echo \Drupal::service('kernel')->getSitePath()"`
+    cd "$site_path"
+    return 0
+  else
+    echo "drush cant be used from this folder"
+    return 1
+  fi
 }
 
 # aliases
