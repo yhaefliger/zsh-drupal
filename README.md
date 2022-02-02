@@ -21,6 +21,13 @@ Mainly inspired from [Artisan ZSH plugin](https://github.com/jessarcher/zsh-arti
 git clone https://github.com/yhaefliger/zsh-drupal.git ~/.oh-my-zsh/custom/plugins/drupal
 ```
 
+### Antigen
+
+Add this line in your `.zshrc` file before `antigen apply` call
+```
+antigen bundle yhaefliger/zsh-drupal
+```
+
 Add `drupal` in the plugin directive of your `.zshrc` file
 
 ## Aliases
